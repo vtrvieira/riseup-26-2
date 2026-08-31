@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --bg-color: #1A1A1A;
+    --cor-primaria: #9B4505;
+    --cor-secundaria: #F6970C;
+    --destaque: #524EEB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+#texto-chamada {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+#lista-atividades {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    gap: 20px;
+}
+
+.atividades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.atividade {
+    border: var(--cor-secundaria) solid 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#aulas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    gap: 20px;
+}
+
+.linha {
+    width: 10rem;
+    border: 1px solid var(--cor-secundaria);
+}
+
+.horario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.dia {
+    border: var(--cor-secundaria) solid 2px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 200px;
+    gap: 30px;
+}
+
+.cadeira {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#contato-professores {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    gap: 20px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#botao {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--cor-secundaria);
+    gap: 10px;
+    text-decoration: none;
+}
+
+#botao img {
+    width: 30px;
+}
+
+.professores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.professor {
+    border: var(--cor-secundaria) solid 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-right: 5rem;
+    gap: 5px;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: var(--cor-primaria);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+}
