@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martine Coding - RiseUp 26.2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section id="logo">
+            <h1>EventsCrab</h1>
+            <p>Divulgação dos eventos Tech em Recife!</p>
+        </section>
+        <nav id="navbar">
+            <a href="#grid">Eventos</a>
+            <a href="#tabela"> Outros eventos</a>
+            <a href="#form"> Sugere um evento!</a>
+        </nav>
+    </header>
+    <main>
+        <section id="descricao">
+            <h2>Fazendo a tecnologia criar raízes!</h2>
+            <p>Pensado para conectar você aos principais eventos aqui em Recife.</p>
+        </section>
+        <section id="grid">
+            <h2>Eventos</h2>
+            <div class="grid-cards">
+                <div class="grid-card">
+                    <img src="img/manguebit.jpg" alt="Imagem do Marco Zero, Recife/Pernambuco">
+                    <h3>Mangue.Bit - 10 anos</h3>
+                    <p>Host: Mangue.Bit</p>
+                    <p>📍Cais do Sertão</p>
+                </div>
+                <div class="grid-card">
+                    <img src="img/gdg.png" alt="">
+                    <h3>DevFest 2026</h3>
+                    <p>Host: GDG Recife</p>
+                    <p>📍NERD (Núcleo de Empreendedorismo e Residência Digital)</p>
+                </div>
+                <div class="grid-card">
+                    <img src="img/recnplay.webp" alt="">
+                    <h3>Rec'n'Play</h3>
+                    <p>Host: Rec'n'Play</p>
+                    <p>📍Bairro do Recife</p>
+                </div>
+            </div>
+        </section>
+        <section id="tabela">
+            <h2>Outros eventos</h2>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Eventos</th>
+                            <th>Situação</th>
+                            <th>Organização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hackaton: Recriando a cidade</td>
+                            <td>Em andamento</td>
+                            <td>Prefeitura de Recife e FIAP</td>
+                        </tr>
+                        <tr>
+                            <td>TEste</td>
+                            <td>teste</td>
+                            <td>teste</td>
+                        </tr>
+                        <tr>
+                            <td>TEste</td>
+                            <td>teste</td>
+                            <td>teste</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="form">
+            <div class="formulario">
+                <h2>Sugere um evento!</h2>
+                <form>
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="email@email.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="evento">Nome do evento</label>
+                        <input type="text" name="evento" id="evento" placeholder="Nome do evento" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="sugestao">Deixa aqui tua sugestão de evento!</label>
+                        <textarea name="sugestao" id="sugestao" placeholder="Conta mais! (Local, host, etc)" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Residência Tecnológica do Porto Digital | RiseUp 26.2 | Martine Coding</p>
+        <p>@Feito por Vitor Emanuel Campos V. de A. e Silva</p>
+    </footer>
+</body>
+
+</html>
