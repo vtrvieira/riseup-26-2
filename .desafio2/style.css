@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: black;
+}
+
+header {
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 2rem;
+    display: block;
+    text-align: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: block;
+}
+
+#descricao {
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#grid {
+    background-color: antiquewhite;
+    margin: 0 2rem 2rem 2rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#grid h2 {
+    margin-top: 2rem;
+}
+
+.grid-cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+}
+
+.grid-card {
+    margin: 30px;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.grid-card:hover {
+    transform: scale(1.05);
+}
+
+.grid-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.grid-card h3 {
+    margin-bottom: 5px;
+}
+
+#tabela {
+    background-color: antiquewhite;
+    margin: 2rem;
+    border-radius: 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tabela h2 {
+    margin-top: 2rem;
+}
+
+.table {
+    width: 80%;
+    margin: 2rem;
+    border-radius: 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+thead tr {
+    background-color: darkblue;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #d1ecf1;
+}
+
+#form {
+    background-color: antiquewhite;
+    margin: 2rem;
+    border-radius: 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.formulario h2 {
+    margin-top: 0;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.campo input, .campo textarea {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+}
+
+.campo textarea {
+    margin-top: 5px;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: #0000e5;
+}
+
+footer {
+    color: white;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+}
+
+@media (min-width: 768px) {
+    .grid-cards {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
